@@ -33,7 +33,7 @@ class Login(View):
             # messages.error(request, 'Invalid Password')
             # return redirect('/user/login')
 
-            user = auth.authenticate(username=username, password=password)
+            user = auth.authenticate(request, username=username, password=password)
             if user is not None:
                 auth.login(request, user)
                 messages.info(request, 'login success')
