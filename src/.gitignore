@@ -1,0 +1,10 @@
+.idea
+src/.env
+src/.env.backup
+src/static/*
+src/media/*
+*.pyc
+env
+venv
+virtualenv
+.code
